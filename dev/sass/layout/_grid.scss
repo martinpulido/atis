@@ -1,0 +1,10 @@
+.wrapper { 
+  margin: 0 auto;
+  max-width: 194rem;
+  text-align: left;
+}
+@media (min-width: $tablet){
+  .wrapper {
+    padding: 0 3rem;
+  }
+}

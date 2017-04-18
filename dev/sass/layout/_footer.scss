@@ -1,0 +1,15 @@
+.footer { 
+  color: $atis-gray;
+
+  .wrapper {
+    padding: 1rem;
+    text-align: center;
+  }
+
+  &-logo {
+    width: 6rem;
+  }
+  &-copyright {
+    font-size: 1.4rem;
+  }
+}
