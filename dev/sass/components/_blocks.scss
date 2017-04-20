@@ -15,11 +15,13 @@
   }
 }
 
+/*Highlight*/
 .highlight-item {
   position: relative;
   text-align: center;
   
   &__img { 
+    display: block;
     width: 100%; 
     max-width: auto;
   }
@@ -60,4 +62,10 @@
   .highlight-item__title {
     font-size: 12rem;
   }
+}
+
+/*Booking Form*/
+.frm-booking {
+  padding: $gutter-header;
+  background: $atis-blue;
 }
