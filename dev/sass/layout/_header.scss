@@ -54,6 +54,10 @@ $gutter-header: 1em;
     width: 100%;
     font-size: 1.6rem;
 
+    &__list {
+      list-style-type: none;
+    }
+
     &__item {
       margin-top: -1px;
       border-top: solid 1px $atis-blue;

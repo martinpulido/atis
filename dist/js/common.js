@@ -39,51 +39,55 @@ var TABLET = 768,
     DESKTOP = 960,
     DESKTOP2 = 1200;
 
-var nombreProyectoOSeccionProyecto = function(){
+var Atis = function(){
 
   var priv = {
+        mobileMenu:{
+          init:function(){
+            var that = this,
+                tOut;
 
-    obj :  null,        
-
-    metodoPrivado1 : function(obj) {            
-
-    },
-
-    metodoPrivado2 : function(obj) {            
-
-    }
-
+            $( '.header' )
+              .on( 'click', '.menu-link', function(ev){
+                ev.preventDefault();
+                that.show();
+              })
+              .on( 'click', '.wrapper-main-nav .close-menu', function(ev){
+                ev.preventDefault();
+                that.hide();
+              });     
+            
+          },
+          show:function(){
+            if( !$( 'body > .overlay' ).length ){
+              $( 'body' ).prepend( '<div class="overlay" />' );
+            }
+            $( 'html' ).addClass( 'not-overflow' );
+            $( '.overlay' ).addClass( 'open' );
+            $( '#wrapper-main-nav' ).addClass( 'open' );
+          },
+          hide:function(){
+            $( 'html' ).removeClass( 'not-overflow' );
+            $( '.overlay' ).remove();
+            $( '#wrapper-main-nav' ).removeClass( 'open' );
+          }
+        }
   };
 
   var pub = {        
+        init : function(){
 
-    bloquePublico1 : {
+          priv.mobileMenu.init();
 
-      metodo1BloquePublico:function(){
-
-      },
-
-      metodo1BloquePublico:function(){
-
-      }
-
-    },                
-
-    init : function(){
-      priv.metodoPrivado1(); // ejemplo llamada metodo privado
-      pub.bloquePublico1.metodo1BloquePublico(); // ejemplo llamada metodo publico                                     
-    }
-
+        }
   };
 
-  return { // métodos que queramos devolver como públicos
-
+  return {
     init: pub.init
-
   }
 
 }();
 
-jQuery(document).ready(function() {    
-  nombreProyectoOSeccionProyecto.init();
-})
+$( function() {    
+  Atis.init();
+});

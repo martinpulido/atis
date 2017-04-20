@@ -8,6 +8,8 @@
     <link rel="shortcut icon" href="favicon.ico">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" />
   </head>
   <body class="not-overflow_">
     <header class="header">
@@ -15,12 +17,12 @@
 
         <a href="#" class="logo-link"><img class="logo" src="img/logo-atis.svg" alt="Atis"></a>
         <a href="#wrapper-main-nav" title="Show menu" class="menu-link"><img src="img/ico-hamburger.svg"></a>
-        <div id="wrapper-main-nav" class="wrapper-main-nav open">
+        <div id="wrapper-main-nav" class="wrapper-main-nav">
           <a href="#" class="logo-link"><img class="logo" src="img/logo-atis-white.svg" alt="Atis"></a>
           <a href="#" class="close-menu" title="Close menu"><img src="img/ico-close.svg"></a>
 
           <nav class="main-nav">
-            <ul>
+            <ul class="main-nav__list">
               <li class="main-nav__item"><a href="#">Flights</a></li>
               <li class="main-nav__item active"><a href="#">Hotels</a></li>
               <li class="main-nav__item"><a href="#">Explore</a></li>
@@ -65,5 +67,8 @@
       </div>
 
     </footer>
+
+    <script src="js/common.js"></script>
+
   </body>
 </html>
