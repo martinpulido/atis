@@ -1,4 +1,7 @@
+$gutter-header: 1em;
+
 .header {
+  position: static;
   .wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -7,20 +10,16 @@
 
 }
 
-$gutter: 1rem;
-
 .logo-link {
-  margin-top: $gutter/2;
-  margin-left: $gutter;
-  width: 7rem;
+  margin: $gutter-header/2 0 0 $gutter-header;
+  width: 10rem;
   .logo {
     width: 100%;
   }
 }
 
 .menu-link {
-  margin-top: $gutter;
-  margin-right: $gutter;
+  margin: $gutter-header $gutter-header 0 0;
 }
 
 .wrapper-main-nav {
@@ -28,6 +27,10 @@ $gutter: 1rem;
   top: 0;
   right: -100%;
   z-index: 2;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
   width: 90%;
   height: 100%;
   background: $atis-blue;
@@ -36,5 +39,42 @@ $gutter: 1rem;
     overflow: auto;
     right: 0;
     transition: right .2s linear;
+  }
+
+  .logo-link {
+    margin-right: $gutter-header;
+  }
+  
+  .close-menu {
+    margin: $gutter-header $gutter-header 0 0;
+  }
+
+  .main-nav {
+    margin-bottom: $gutter-header*2;
+    width: 100%;
+    font-size: 1.6rem;
+
+    &__item {
+      margin-top: -1px;
+      border-top: solid 1px $atis-blue;
+      border-bottom: solid 1px $atis-blue;
+      border-left: solid 5px $white;
+      background-color: $white;
+      &.active {
+        border-left-color: $atis-blue;
+
+        a {
+          font-weight: bold;
+          color: $atis-blue;
+        }
+      }
+    }
+
+    a {
+      display: block;
+      padding: .6em 1em;
+      color: $atis-blue-gray;
+      text-decoration: none
+    }
   }
 }
