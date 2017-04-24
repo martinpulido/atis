@@ -57,12 +57,20 @@
       list-style-type: none;
     }
 
-    &__item {
+    &__item:not(:last-child) { 
       margin-top: -1px;
       border-top: solid 1px $atis-blue;
       border-bottom: solid 1px $atis-blue;
       border-left: solid 5px $white;
       background-color: $white;
+      
+      a {
+        display: block;
+        padding: .6em 1em;
+        color: $atis-blue-gray;
+        text-decoration: none
+      }
+
       &.active {
         border-left-color: $atis-blue;
 
@@ -71,13 +79,37 @@
           color: $atis-blue;
         }
       }
+
+      /*Overwrite font-awesome icon*/
+      .fa { 
+        width: 20px;
+
+        &-plane { 
+          font-size: 20px;
+          &:before { 
+            position: absolute;
+            transform: translateY(-14px);
+          }
+        }
+      }
+    }
+    &__item:last-child {
+      padding: 2rem;
+      a.become-a-host {
+        border: solid 1px $atis-blue;
+        width: 100%;
+        font-size: 1.6rem;
+        color: $atis-blue-gray;
+        text-align: center;
+        transition: color .2s linear;
+        &:hover {
+          font-weight: bold;
+          color: $atis-blue;
+          background-color: $white;
+          transition: color .2s linear;
+        }
+      }
     }
 
-    a {
-      display: block;
-      padding: .6em 1em;
-      color: $atis-blue-gray;
-      text-decoration: none
-    }
   }
 }
