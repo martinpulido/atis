@@ -1,0 +1,26 @@
+{
+  "name": "atis",
+  "version": "1.0.0",
+  "description": "A free web design converted into a HTML and CSS webpage.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/martinpulido/atis.git"
+  },
+  "author": "Santiago Martin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/martinpulido/atis/issues"
+  },
+  "homepage": "https://github.com/martinpulido/atis#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.11",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.0"
+  }
+}
