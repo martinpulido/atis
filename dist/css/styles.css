@@ -599,41 +599,70 @@ html, body {
   .frm-booking label {
     position: relative;
     display: block;
-    border-radius: .6em;
+    border-bottom: solid 1px #017dfb;
     margin-bottom: 1em;
     width: 100%;
-    background-color: #ffffff;
-    color: #017dfb; }
+    color: #ffffff; }
     .frm-booking label span.lbl {
       position: absolute;
       padding: .4em 0 0 .6em;
       font-size: 2rem;
       color: #ffffff; }
       .frm-booking label span.lbl .fa {
-        color: #017dfb; }
+        color: rgba(255, 255, 255, 0.6); }
       .frm-booking label span.lbl span {
         position: absolute;
         top: -9999em;
         left: -9999em;
         clip: rect(1px, 1px, 1px, 1px); }
-    .frm-booking label select, .frm-booking label input {
-      display: block;
-      border: none;
-      padding: 1rem 2rem 1rem 4rem;
-      width: 100%;
-      background: transparent;
-      color: #000000; }
+  .frm-booking select, .frm-booking input {
+    display: block;
+    border: none;
+    padding: 1rem 2rem 1rem 4rem;
+    width: 100%;
+    background: transparent; }
+  .frm-booking input {
+    border-bottom: solid 1px rgba(255, 255, 255, 0.6);
+    padding: 1.2rem 2rem 1.3rem 4rem; }
   .frm-booking .submit-button {
     display: inline-block;
     border-radius: 2.5em;
     border: none;
     margin: 0 auto;
-    padding: 1em 3.3em;
+    padding: .7em 3.3em;
     width: 100%;
     max-width: 40rem;
     background: #fff;
-    font-size: 1.4rem;
+    font-size: 1.8rem;
     color: #017dfb; }
+    .frm-booking .submit-button span {
+      font-size: 1.6rem; }
+
+.pretty-select {
+  position: relative;
+  overflow: hidden;
+  outline: none;
+  border-bottom: solid 1px rgba(255, 255, 255, 0.6); }
+  .pretty-select:after {
+    content: "\f078";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    display: block;
+    margin-top: -1rem;
+    font: normal normal normal 14px/1 FontAwesome;
+    color: rgba(255, 255, 255, 0.6);
+    pointer-events: none; }
+  .pretty-select select {
+    outline: none;
+    border-radius: 0;
+    border: 0;
+    background: transparent;
+    line-height: 1.5;
+    color: #ffffff;
+    -webkit-appearance: none; }
+    .pretty-select select option {
+      color: #000000; }
 
 .footer {
   color: #bdbdbd; }

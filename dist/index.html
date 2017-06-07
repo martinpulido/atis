@@ -60,17 +60,19 @@
 
         <form action="#" method="post" class="frm-booking">
           <label for="booking-city">
-            <span class="lbl"><i class="fa fa-map-marker"></i> <span>City</span></span>
-            <select id="booking-city" placeholder="City">
-              <option value="-1" hidden>Pick up your city</option>
-              <option value="1">Athens</option>
-              <option value="2">Crete</option>
-              <option value="3">Halkidiki</option>
-              <option value="4">Meteora</option>
-              <option value="5">Mykonos</option>
-              <option value="6">Myrtos Beach</option>
-              <option value="7">Thessaloniki</option>
-            </select>
+            <div class="pretty-select">
+              <span class="lbl"><i class="fa fa-map-marker"></i> <span>City</span></span>
+              <select id="booking-city" placeholder="City">
+                <option value="-1" hidden>Pick up your city</option>
+                <option value="1">Athens</option>
+                <option value="2">Crete</option>
+                <option value="3">Halkidiki</option>
+                <option value="4">Meteora</option>
+                <option value="5">Mykonos</option>
+                <option value="6">Myrtos Beach</option>
+                <option value="7">Thessaloniki</option>
+              </select>
+            </div>
           </label>
 
           <label for="booking-date-checkin">
@@ -84,47 +86,51 @@
           </label>
 
           <label for="booking-rooms">
-            <span class="lbl"><i class="fa fa-bed"></i> <span>Rooms</span></span>
-            <select id="booking-rooms" placeholder="Rooms">
-              <option value="-1" hidden>Select number of rooms</option>
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-            </select>
+            <div class="pretty-select">
+              <span class="lbl"><i class="fa fa-bed"></i> <span>Rooms</span></span>
+              <select id="booking-rooms" placeholder="Rooms">
+                <option value="1">1 Room</option>
+                <option value="2">2 Rooms</option>
+                <option value="3">3 Rooms</option>
+              </select>
+            </div>
           </label>
 
           <label for="booking-adults">
-            <span class="lbl"><i class="fa fa-user"></i> <span>Adults</span></span>
-            <select id="booking-adults" placeholder="Adults">
-              <option value="-1" hidden>Select number of adults</option>
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-            </select>
+            <div class="pretty-select">
+              <span class="lbl"><i class="fa fa-user"></i> <span>Adults</span></span>
+              <select id="booking-adults" placeholder="Adults">
+                <option value="1">1 Adult</option>
+                <option value="2">2 Adults</option>
+                <option value="3">3 Adults</option>
+              </select>
+            </div>
           </label>
 
           <label for="booking-children">
-            <span class="lbl"><i class="fa fa-child"></i> <span>Children</span></span>
-            <select id="booking-children" placeholder="Children">
-              <option value="-1" hidden>Select number of children</option>
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5</option>
-            </select>
+            <div class="pretty-select">
+              <span class="lbl"><i class="fa fa-child"></i> <span>Children</span></span>
+              <select id="booking-children" placeholder="Children">
+                <option value="1">0 Children</option>
+                <option value="2">2 Children</option>
+                <option value="3">3 Children</option>
+                <option value="4">4 Children</option>
+                <option value="5">5 Children</option>
+              </select>
+            </div>
           </label>
 
           <label for="booking-stars">
-            <span class="lbl"><i class="fa fa-star-o"></i> <span>Stars</span></span>
-            <select id="booking-stars" placeholder="Stars">
-              <option value="-1">Select hotel category</option>
-              <option value="1">*</option>
-              <option value="2">**</option>
-              <option value="3">***</option>
-              <option value="4">****</option>
-              <option value="5">*****</option>
-            </select>
+            <div class="pretty-select">
+              <span class="lbl"><i class="fa fa-star-o"></i> <span>Stars</span></span>
+              <select id="booking-stars" placeholder="Stars">
+                <option value="1">*</option>
+                <option value="2">**</option>
+                <option value="3" selected="selected">***</option>
+                <option value="4">****</option>
+                <option value="5">*****</option>
+              </select>
+            </div>
           </label>
           
           <button type="submit" class="submit-button"><i class="fa fa-search"></i> <span>Search</span></button>
