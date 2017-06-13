@@ -156,3 +156,28 @@
     }
   }
 }
+
+
+/*### POPULAR PLACES ###*/
+.popular-places {
+  text-align: center;
+
+  &__title {
+    padding: 2rem 0;
+    color: $atis-blue-gray;
+    line-height: 1.3;
+    text-transform: uppercase;
+    letter-spacing: .6rem;
+    word-spacing: 1.5rem;
+  }
+
+  &__item {
+    margin-bottom: 2rem;
+    
+    &__img {
+      width: auto;
+      max-width: 100%;
+    }
+  }
+
+}
