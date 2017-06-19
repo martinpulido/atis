@@ -10,17 +10,17 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   </head>
   <body class="not-overflow_">
     <header class="header">
       <div class="wrapper">
 
         <a href="#" class="logo-link"><img class="logo" src="img/logo-atis.svg" alt="Atis"></a>
-        <a href="#wrapper-main-nav" title="Show menu" class="menu-link"><img src="img/ico-hamburger.svg"></a>
+        <a href="#wrapper-main-nav" title="Show menu" class="menu-link"><img src="img/ico-hamburger.svg" alt=""></a>
         <div id="wrapper-main-nav" class="wrapper-main-nav">
           <a href="#" class="logo-link"><img class="logo" src="img/logo-atis-white.svg" alt="Atis"></a>
-          <a href="#" class="close-menu" title="Close menu"><img src="img/ico-close.svg"></a>
+          <a href="#" class="close-menu" title="Close menu"><img src="img/ico-close.svg" alt=""></a>
 
           <nav class="main-nav">
             <ul class="main-nav__list">
@@ -60,9 +60,9 @@
 
         <form action="#" method="post" class="frm-booking">
           <label for="booking-city">
-            <div class="pretty-select">
+            <span class="pretty-select">
               <span class="lbl"><i class="fa fa-map-marker"></i> <span>City</span></span>
-              <select id="booking-city" placeholder="City">
+              <select id="booking-city">
                 <option value="-1" hidden>Pick up your city</option>
                 <option value="1">Athens</option>
                 <option value="2">Crete</option>
@@ -72,7 +72,7 @@
                 <option value="6">Myrtos Beach</option>
                 <option value="7">Thessaloniki</option>
               </select>
-            </div>
+            </span>
           </label>
 
           <label for="booking-date-checkin">
@@ -86,51 +86,51 @@
           </label>
 
           <label for="booking-rooms">
-            <div class="pretty-select">
+            <span class="pretty-select">
               <span class="lbl"><i class="fa fa-bed"></i> <span>Rooms</span></span>
-              <select id="booking-rooms" placeholder="Rooms">
+              <select id="booking-rooms">
                 <option value="1">1 Room</option>
                 <option value="2">2 Rooms</option>
                 <option value="3">3 Rooms</option>
               </select>
-            </div>
+            </span>
           </label>
 
           <label for="booking-adults">
-            <div class="pretty-select">
+            <span class="pretty-select">
               <span class="lbl"><i class="fa fa-user"></i> <span>Adults</span></span>
-              <select id="booking-adults" placeholder="Adults">
+              <select id="booking-adults">
                 <option value="1">1 Adult</option>
                 <option value="2">2 Adults</option>
                 <option value="3">3 Adults</option>
               </select>
-            </div>
+            </span>
           </label>
 
           <label for="booking-children">
-            <div class="pretty-select">
+            <span class="pretty-select">
               <span class="lbl"><i class="fa fa-child"></i> <span>Children</span></span>
-              <select id="booking-children" placeholder="Children">
+              <select id="booking-children">
                 <option value="1">0 Children</option>
                 <option value="2">2 Children</option>
                 <option value="3">3 Children</option>
                 <option value="4">4 Children</option>
                 <option value="5">5 Children</option>
               </select>
-            </div>
+            </span>
           </label>
 
           <label for="booking-stars">
-            <div class="pretty-select">
+            <span class="pretty-select">
               <span class="lbl"><i class="fa fa-star-o"></i> <span>Stars</span></span>
-              <select id="booking-stars" placeholder="Stars">
+              <select id="booking-stars">
                 <option value="1">*</option>
                 <option value="2">**</option>
                 <option value="3" selected="selected">***</option>
                 <option value="4">****</option>
                 <option value="5">*****</option>
               </select>
-            </div>
+            </span>
           </label>
           
           <button type="submit" class="submit-button"><i class="fa fa-search"></i> <span>Search</span></button>
@@ -141,8 +141,12 @@
           <h2 class="popular-places__title">Most Popular Places</h2>
 
           <article class="popular-places__item">
-            <a href="#popular-places-0">
-              <img src="img/Thessaloniki.jpg" alt="Thessaloniki" class="popular-places__item__img" />
+            <a href="#popular-places-0" title="Thessaloniki">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/Thessaloniki.jpg">
+                <source media="(min-width: 768px)" srcset="img/Thessaloniki-medium.jpg">
+                <img src="img/Thessaloniki-small.jpg" alt="Thessaloniki" class="popular-places__item__img" />
+              </picture>
             </a>
             <div id="popular-places-0" class="popular-places__item__overlay">
               <h3 class="popular-places__item__title">Thessaloniki</h3>
@@ -155,8 +159,14 @@
           </article>
 
           <article class="popular-places__item">
-            <img src="" alt="" />
-            <div class="">
+            <a href="#popular-places-1" title="Crete">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/Creta.jpg">
+                <source media="(min-width: 768px)" srcset="img/Creta-medium.jpg">
+                <img src="img/Creta-small.jpg" alt="Thessaloniki" class="popular-places__item__img" />
+              </picture>
+            </a>
+            <div id="popular-places-1" class="">
               <h3 class="popular-places__item__title">Crete</h3>
               <ul>
                 <li><a href="#">11 Flights</a></li>
@@ -167,8 +177,14 @@
           </article>
 
           <article class="popular-places__item">
-            <img src="" alt="" />
-            <div class="">
+            <a href="#popular-places-2" title="Athens">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/Athens.jpg">
+                <source media="(min-width: 768px)" srcset="img/Athens-medium.jpg">
+                <img src="img/Athens-small.jpg" alt="Athens" class="popular-places__item__img" />
+              </picture>
+            </a>
+            <div id="popular-places-2" class="">
               <h3 class="popular-places__item__title">Athens</h3>
               <ul>
                 <li><a href="#">35 Flights</a></li>
@@ -179,8 +195,14 @@
           </article>
 
           <article class="popular-places__item">
-            <img src="" alt="" />
-            <div class="">
+            <a href="#popular-places-3" title="Halkidiki">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/Halkidiki.jpg">
+                <source media="(min-width: 768px)" srcset="img/Halkidiki-medium.jpg">
+                <img src="img/Halkidiki-small.jpg" alt="Halkidiki" class="popular-places__item__img" />
+              </picture>
+            </a>
+            <div id="popular-places-3" class="">
               <h3 class="popular-places__item__title">Halkidiki</h3>
               <ul>
                 <li><a href="#">5 Flights</a></li>
@@ -191,8 +213,14 @@
           </article>
 
           <article class="popular-places__item">
-            <img src="" alt="" />
-            <div class="">
+            <a href="#popular-places-4" title="Mykonos">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/Mykonos.jpg">
+                <source media="(min-width: 768px)" srcset="img/Mykonos-medium.jpg">
+                <img src="img/Mykonos-small.jpg" alt="Mykonos" class="popular-places__item__img" />
+              </picture>
+            </a>
+            <div id="popular-places-4" class="">
               <h3 class="popular-places__item__title">Mykonos</h3>
               <ul>
                 <li><a href="#">5 Flights</a></li>
@@ -203,21 +231,39 @@
           </article>  
 
           <article class="popular-places__item">
-            <h3 class="popular-places__item__title">Meteora</h3>
-            <ul>
-              <li><a href="#">4 Flights</a></li>
-              <li><a href="#">17 Restaurants</a></li>
-              <li><a href="#">22 Hotels</a></li>
-            </ul>
+            <a href="#popular-places-5" title="Meteora">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/Meteora.jpg">
+                <source media="(min-width: 768px)" srcset="img/Meteora-medium.jpg">
+                <img src="img/Meteora-small.jpg" alt="Meteora" class="popular-places__item__img" />
+              </picture>
+            </a>
+            <div id="popular-places-5" class="">
+              <h3 class="popular-places__item__title">Meteora</h3>
+              <ul>
+                <li><a href="#">4 Flights</a></li>
+                <li><a href="#">17 Restaurants</a></li>
+                <li><a href="#">22 Hotels</a></li>
+              </ul>
+            </div>
           </article>
 
           <article class="popular-places__item">
-            <h3 class="popular-places__item__title">Myrthos Beach</h3>
-            <ul>
-              <li><a href="#">4 Flights</a></li>
-              <li><a href="#">14 Restaurants</a></li>
-              <li><a href="#">22 Hotels</a></li>
-            </ul>
+            <a href="#popular-places-6" title="Myrthos Beach">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/MyrthosBeach.jpg">
+                <source media="(min-width: 768px)" srcset="img/MyrthosBeach-medium.jpg">
+                <img src="img/MyrthosBeach-small.jpg" alt="Myrthos Beach" class="popular-places__item__img" />
+              </picture>
+            </a>
+            <div id="popular-places-6" class="">
+              <h3 class="popular-places__item__title">Myrthos Beach</h3>
+              <ul>
+                <li><a href="#">4 Flights</a></li>
+                <li><a href="#">14 Restaurants</a></li>
+                <li><a href="#">22 Hotels</a></li>
+              </ul>
+            </div>
           </article> 
 
 
