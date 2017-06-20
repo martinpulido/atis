@@ -254,3 +254,71 @@
   }
 
 }
+
+
+@media screen and (min-width: $mobile2){
+  .popular-places__item {
+
+    &__overlay {
+      top: calc(100% - 6rem);
+    }
+    &__title {
+      font-size: 3.6rem;
+    }
+  }
+}
+
+@media screen and (min-width: $desktop){
+  .popular-places {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 2rem;
+    grid-row-gap: 2rem;
+
+    &__title {
+      grid-column-start: 1;
+      grid-column-end: span 2;
+      padding-bottom: 0;
+    }
+
+    &__item {
+      margin-bottom: 0;
+      order: 1;
+
+      &.highlight {
+        grid-column-start: 1;
+        grid-column-end: span 2;
+        order: 0;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $desktop2){
+  .popular-places {
+    grid-template-columns: 0.37fr 1fr 1fr 1fr 1fr 0.37fr;
+    grid-column-gap: 3rem;
+    grid-row-gap: 3rem;
+
+    &__title {
+      grid-column-start: 1;
+      grid-column-end: span 3;
+    }
+
+    &__item {
+
+
+      &.highlight {
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 4;
+        order: 1;
+      }
+
+      &:nth-child(-n+2){
+        border: solid 1px red;
+      }
+    }
+  }
+}
