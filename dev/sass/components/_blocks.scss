@@ -200,26 +200,35 @@
     &__overlay {
       position: absolute;
       top: calc(100% - 5rem);
+      left: 0;
       padding: 1rem;
       width: 100%;
       height: 100%;
+      background: rgba( $atis-blue, 0 );
       text-align: left;
+      transition: top .2s linear, text-align .2s linear, background .2s linear;
 
       &.open {
-        top: 0; 
-        left: 0;
-        background: rgba( $atis-blue, .4 );
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        top: 0;
+        background: rgba( $atis-blue, .8 );
         text-align: center;
+        transition: top .2s linear, text-align .2s linear, background .2s linear;
       }
     }
 
     &__title {
       margin-bottom: 1rem;
+      width: 100%;
       font-size: 2.6rem;
       font-weight: bold;
       color: $white;
     }
     &__features {
+      width: 100%;
       font-size: 1.2rem;
       font-weight: bold;
       
@@ -234,9 +243,11 @@
         padding: .7rem 1.9rem;
         color: $white;
         text-decoration: none;
+        transition: background-color .2s linear;
 
         &:hover {
           background-color: rgba( $white, .4 );
+          transition: background-color .2s linear;
         }
       }
     }
