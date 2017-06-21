@@ -763,20 +763,32 @@ html, body {
 
 @media screen and (min-width: 1200px) {
   .popular-places {
-    grid-template-columns: 0.37fr 1fr 1fr 1fr 1fr 0.37fr;
-    grid-column-gap: 3rem;
-    grid-row-gap: 3rem; }
+    grid-template-columns: 0.37fr repeat(4, 1fr) 0.37fr;
+    grid-gap: 2rem; }
     .popular-places__title {
       grid-column-start: 1;
-      grid-column-end: span 3; }
-    .popular-places__item.highlight {
-      grid-column-start: 3;
-      grid-column-end: 4;
-      grid-row-start: 2;
-      grid-row-end: 4;
-      order: 1; }
-    .popular-places__item:nth-child(-n+2) {
-      border: solid 1px red; } }
+      grid-column-end: 7; }
+    .popular-places__item {
+      grid-column-end: span 2;
+      height: 25.5rem; }
+      .popular-places__item.highlight {
+        grid-column-start: 3;
+        grid-column-end: 5;
+        grid-row-start: 2;
+        grid-row-end: 4;
+        order: 1;
+        height: auto; }
+        .popular-places__item.highlight .popular-places__item__img {
+          width: auto;
+          height: 100%; }
+      .popular-places__item:nth-child(6n+1), .popular-places__item:nth-child(7n+1) {
+        height: 35rem; }
+      .popular-places__item:nth-child(6n+1) {
+        grid-column-start: 1;
+        grid-column-end: 4; }
+      .popular-places__item:nth-child(7n+1) {
+        grid-column-start: 4;
+        grid-column-end: 7; } }
 
 .footer {
   color: #bdbdbd; }
