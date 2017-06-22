@@ -55,3 +55,14 @@ html, body {
     transition: background .2s linear;
   }
 }
+
+.category-one-star,
+.category-two-stars,
+.category-three-stars,
+.category-four-stars,
+.category-five-stars { display: inline-block; width: 10.5rem; height: 1.5rem; background: url(../img/sprite-stars.png) 0 0 no-repeat; text-indent: -9999em; }
+  .category-one-star { background-position: 0 -60px }
+  .category-two-stars { background-position: 0 -45px }
+  .category-three-stars { background-position: 0 -30px }
+  .category-four-stars { background-position: 0 -15px }
+  .category-five-stars { background-position: 0 0px }

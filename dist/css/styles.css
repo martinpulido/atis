@@ -449,6 +449,32 @@ html, body {
     background: rgba(255, 255, 255, 0.8);
     transition: background .2s linear; }
 
+.category-one-star,
+.category-two-stars,
+.category-three-stars,
+.category-four-stars,
+.category-five-stars {
+  display: inline-block;
+  width: 10.5rem;
+  height: 1.5rem;
+  background: url(../img/sprite-stars.png) 0 0 no-repeat;
+  text-indent: -9999em; }
+
+.category-one-star {
+  background-position: 0 -60px; }
+
+.category-two-stars {
+  background-position: 0 -45px; }
+
+.category-three-stars {
+  background-position: 0 -30px; }
+
+.category-four-stars {
+  background-position: 0 -15px; }
+
+.category-five-stars {
+  background-position: 0 0px; }
+
 .header {
   position: static; }
   .header .wrapper {
@@ -550,11 +576,11 @@ html, body {
   font-size: 1.4rem;
   color: #017dfb;
   text-decoration: none;
-  transition: backgroundColor .2s linear, color .2s linear; }
+  transition: background .2s linear, color .2s linear; }
   .btn-primary:hover, .become-a-host:hover {
     background: #017dfb;
     color: #ffffff;
-    transition: backgroundColor .2s linear, color .2s linear; }
+    transition: background .2s linear, color .2s linear; }
 
 /*Highlight*/
 .highlight-item {
@@ -789,6 +815,59 @@ html, body {
       .popular-places__item:nth-child(7n+1) {
         grid-column-start: 4;
         grid-column-end: 7; } }
+
+/*### POPULAR HOTELS ###*/
+.popular-hotels {
+  padding: 0 1rem;
+  background: #f9f9f9;
+  text-align: center; }
+  .popular-hotels__title {
+    padding: 2rem 0;
+    color: #697899;
+    line-height: 1.3;
+    text-transform: uppercase;
+    letter-spacing: .6rem;
+    word-spacing: 1.5rem; }
+  .popular-hotels__item {
+    position: relative;
+    margin-bottom: 4rem;
+    background: #ffffff;
+    box-shadow: 0px 6px 33px -3px rgba(0, 0, 0, 0.1); }
+    .popular-hotels__item__img {
+      display: block;
+      width: 100%; }
+    .popular-hotels__item__title, .popular-hotels__item__category, .popular-hotels__item__price, .popular-hotels__item__days {
+      display: block;
+      max-width: 50%; }
+    .popular-hotels__item__title {
+      order: 1;
+      font-size: 1.8rem; }
+    .popular-hotels__item__category {
+      order: 3; }
+    .popular-hotels__item__price {
+      order: 2;
+      font-size: 3.6rem;
+      font-weight: 100; }
+    .popular-hotels__item__days {
+      order: 4;
+      width: 7rem;
+      font-size: 1.4rem;
+      text-align: center; }
+  .popular-hotels__info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 2rem 2rem 4rem 2rem;
+    background: linear-gradient(to bottom, #ffffff 0%, #f6f6f6 100%);
+    color: #697899;
+    text-align: left; }
+  .popular-hotels .btn-primary {
+    position: absolute;
+    left: 50%;
+    bottom: -2rem;
+    transform: translateX(-50%);
+    min-width: 17rem;
+    text-align: center; }
 
 .footer {
   color: #bdbdbd; }
