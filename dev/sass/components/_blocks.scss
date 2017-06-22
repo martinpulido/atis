@@ -1,17 +1,37 @@
-.btn-primary, .become-a-host {
+.btn {
   display: inline-block;
   border-radius: 2.5em;
   padding: 1em 3.3em;
-  background: $white;/*
-  box-shadow: 0px 0px 82px 82px rgba($atis-blue, .05);*/
   font-size: 1.4rem;
-  color: $atis-blue;
   text-decoration: none;
   transition: background .2s linear, color .2s linear;
+  
+  &:hover {
+    transition: background .2s linear, color .2s linear;
+  }
+}
+
+.btn-primary, .become-a-host {
+  @extend .btn;
+  background: $white;/*
+  box-shadow: 0px 0px 82px 82px rgba($atis-blue, .05);*/
+  color: $atis-blue;
+
   &:hover {
     background: $atis-blue;
     color: $white;
-    transition: background .2s linear, color .2s linear;
+    
+  }
+}
+
+.btn-secondary {
+  @extend .btn;
+  border: solid 2px $gray;
+  background: $atis-white-gray;
+  color: #c5c5c5;
+
+  &:hover {
+    background: $gray;
   }
 }
 
@@ -344,7 +364,7 @@
 
 /*### POPULAR HOTELS ###*/
 .popular-hotels {
-  padding: 0 1rem;
+  padding: 0 1rem 4rem;
   background: $atis-white-gray;
   text-align: center;
 
@@ -360,7 +380,7 @@
   &__item {
     position: relative;
     margin-bottom: 4rem;  
-    background: $white;
+    background: #f6f6f6;
     box-shadow: 0px 6px 33px -3px rgba( $black, .1);
 
     &__img {
@@ -370,20 +390,23 @@
 
     &__title, &__category, &__price, &__days {
       display: block;
-      max-width: 50%;
+      width: 50%;
     }
 
     &__title {
       order: 1;
       font-size: 1.8rem;
+      text-align: left;
     }
     &__category {
       order: 3;
+      text-align: left;
     }
     &__price {
       order: 2;
       font-size: 3.6rem;
       font-weight: 100;
+      text-align: right;
     }
     &__days {
       order: 4;
@@ -410,5 +433,43 @@
     transform: translateX(-50%);
     min-width: 17rem;
     text-align: center;
+  }
+}
+
+@media screen and (min-width:$tablet){
+  .popular-hotels {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    text-align: left;
+
+    &__title {
+      width: 100%;
+    }
+    &__item {
+      width: 48%;
+    }
+
+    .wrap-buttons {
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+
+}
+
+@media screen and (min-width:$desktop){
+  .popular-hotels {
+    justify-content: initial;
+    text-align: center;
+
+    &__item {
+      margin-right: 1.5%;
+      margin-left: 1.5%;
+      width: 30%;
+    }
   }
 }
