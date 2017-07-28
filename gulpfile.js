@@ -7,9 +7,9 @@ var gulp = require('gulp'),
 gulp.task('sass',function(){
   return gulp
     .src('./dev/sass/**/*.scss')
-    //.pipe(sourcemaps.init())
+    .pipe(sourcemaps.init())
     .pipe(sass())
-    //.pipe(sourcemaps.write('.'))
+    .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest('./dist/css'))
     .pipe(browserSync.stream());
 });
