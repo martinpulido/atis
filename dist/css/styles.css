@@ -779,52 +779,52 @@ html, body {
   .popular-places__item__title {
     font-size: 3.6rem; } }
 
-@media screen and (min-width: 960px) {
-  .popular-places {
+@media screen and (min-width: 768px) {
+  .popular-places__wrapper-item {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 2rem;
     grid-row-gap: 2rem; }
-    .popular-places__title {
+  .popular-places__item {
+    margin-bottom: 0;
+    order: 1; }
+    .popular-places__item.highlight {
       grid-column-start: 1;
       grid-column-end: span 2;
-      padding-bottom: 0; }
-    .popular-places__item {
-      margin-bottom: 0;
-      order: 1; }
-      .popular-places__item.highlight {
-        grid-column-start: 1;
-        grid-column-end: span 2;
-        order: 0; } }
+      order: 0; } }
 
-@media screen and (min-width: 1200px) {
-  .popular-places {
+@media screen and (min-width: 960px) {
+  .popular-places__wrapper-item {
     grid-template-columns: 0.37fr repeat(4, 1fr) 0.37fr;
-    grid-gap: 2rem; }
-    .popular-places__title {
-      grid-column-start: 1;
-      grid-column-end: 7; }
-    .popular-places__item {
-      grid-column-end: span 2;
-      height: 25.5rem; }
-      .popular-places__item.highlight {
-        grid-column-start: 3;
-        grid-column-end: 5;
-        grid-row-start: 2;
-        grid-row-end: 4;
-        order: 1;
-        height: auto; }
-        .popular-places__item.highlight .popular-places__item__img {
-          width: auto;
-          height: 100%; }
-      .popular-places__item:nth-child(6n+1), .popular-places__item:nth-child(7n+1) {
-        height: 35rem; }
-      .popular-places__item:nth-child(6n+1) {
-        grid-column-start: 1;
-        grid-column-end: 4; }
-      .popular-places__item:nth-child(7n+1) {
-        grid-column-start: 4;
-        grid-column-end: 7; } }
+    grid-template-rows: 1fr 1fr 1.75fr;
+    grid-gap: 2rem;
+    height: calc(55rem - 2rem); }
+  .popular-places__item {
+    grid-row-end: span 1;
+    grid-column-end: span 2;
+    background: #444; }
+    .popular-places__item.highlight {
+      grid-column-start: 3;
+      grid-column-end: 5;
+      grid-row-start: 1;
+      grid-row-end: 3;
+      order: 1;
+      height: auto; }
+      .popular-places__item.highlight .popular-places__item__img {
+        width: auto;
+        height: 100%; }
+    .popular-places__item:nth-last-child(2), .popular-places__item:last-child {
+      grid-column-end: span 3; }
+    .popular-places__item__overlay {
+      top: calc(100% - 7rem);
+      padding: 2rem; } }
+
+@media only screen and (min-width: 1200px) {
+  .popular-places__wrapper-item {
+    height: calc(67rem - 2rem); }
+  .popular-places__item__overlay {
+    top: calc(100% - 9rem);
+    padding: 3rem; } }
 
 /*### POPULAR HOTELS ###*/
 .popular-hotels {
@@ -916,3 +916,5 @@ html, body {
     width: 6rem; }
   .footer-copyright {
     font-size: 1.4rem; }
+
+/*# sourceMappingURL=styles.css.map */
