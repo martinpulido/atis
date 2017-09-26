@@ -1,0 +1,48 @@
+/*Highlight*/
+.highlight-item {
+  position: relative;
+  text-align: center;
+  
+  &__img { 
+    display: block;
+    width: 100%; 
+    max-width: auto;
+  }
+
+  &__content {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 100%;
+    background: rgba($white, .5);
+  }
+
+  &__title {
+    font: normal 6rem $molle;
+    color: $atis-blue;
+  }
+  &__subtitle {
+    margin-bottom: 1em;
+    font-size: 1.4rem;
+    color: $atis-blue;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+  }
+
+}
+
+@media (min-width:$mobile2){
+  .highlight-item__title {
+    font-size: 8rem;
+  }
+  .highlight-item__subtitle {
+    margin-bottom: 2em;
+  }
+}
+@media (min-width:$tablet){
+  .highlight-item__title {
+    font-size: 12rem;
+  }
+}

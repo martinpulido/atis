@@ -1,0 +1,189 @@
+/*### POPULAR PLACES ###*/
+.popular-places {
+  text-align: center;
+
+  &__title {
+    padding: 2rem 0;
+    color: $atis-blue-gray;
+    line-height: 1.3;
+    text-transform: uppercase;
+    letter-spacing: .6rem;
+    word-spacing: 1.5rem;
+  }
+
+  &__item {
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 2rem;
+    
+    > a {
+      display: block;
+
+      &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        width: 100%;
+        height: 100%;
+        background: rgba( $atis-blue, .2 );
+      }
+    }
+    
+    &__img {
+      position: relative;
+      float: left;
+      width: 100%;
+
+    }
+    &__overlay {
+      position: absolute;
+      top: calc(100% - 5rem);
+      left: 0;
+      padding: 1rem;
+      width: 100%;
+      height: 100%;
+      background: rgba( $atis-blue, 0 );
+      text-align: left;
+      transition: top .2s linear, text-align .2s linear, background .2s linear;
+
+      &.open {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        top: 0;
+        background: rgba( $atis-blue, .8 );
+        text-align: center;
+        transition: top .2s linear, text-align .2s linear, background .2s linear;
+      }
+    }
+
+    &__title {
+      margin-bottom: 1rem;
+      width: 100%;
+      font-size: 2.6rem;
+      font-weight: bold;
+      color: $white;
+    }
+    &__features {
+      width: 100%;
+      font-size: 1.2rem;
+      font-weight: bold;
+      
+      li {
+        display: inline-block;
+        margin: .5rem;
+      }
+      a {
+        display: block;
+        border-radius: 1.6rem;
+        border: solid 2px rgba( $white, .4);
+        padding: .7rem 1.9rem;
+        color: $white;
+        text-decoration: none;
+        transition: background-color .2s linear;
+
+        &:hover {
+          background-color: rgba( $white, .4 );
+          transition: background-color .2s linear;
+        }
+      }
+    }
+  }
+
+}
+
+
+@media screen and (min-width: $mobile2){
+  .popular-places__item {
+
+    &__overlay {
+      top: calc(100% - 6rem);
+    }
+    &__title {
+      font-size: 3.6rem;
+    }
+  }
+}
+
+@media screen and (min-width: $tablet){
+  .popular-places {
+
+    &__wrapper-item {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: 2rem;
+      grid-row-gap: 2rem;
+    }
+
+    &__item {
+      margin-bottom: 0;
+      order: 1;
+
+      &.highlight {
+        grid-column-start: 1;
+        grid-column-end: span 2;
+        order: 0;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $desktop){
+
+  .popular-places {
+
+
+
+    &__wrapper-item {
+      grid-template-columns: 0.37fr repeat(4, 1fr) 0.37fr;
+      grid-template-rows: 1fr 1fr 1.75fr;
+      grid-gap: 2rem;
+      height: calc(55rem - 2rem);
+    }
+
+    &__item {
+      grid-row-end: span 1;
+      grid-column-end: span 2;
+      background: #444;
+
+      &.highlight {
+        grid-column-start: 3;
+        grid-column-end: 5;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        order: 1;
+
+        height: auto;
+
+        .popular-places__item__img {
+          width: auto;
+          height: 100%;
+        }
+      }
+
+      &:nth-last-child(2), &:last-child {
+        grid-column-end: span 3;
+      }
+
+      &__overlay {
+        top: calc(100% - 7rem);
+        padding: 2rem;
+      }
+      
+      
+    }
+  }
+}
+
+@media only screen and (min-width: $desktop2){
+  .popular-places__wrapper-item {
+    height: calc(67rem - 2rem);
+  }
+  .popular-places__item__overlay {
+    top: calc(100% - 9rem);
+    padding: 3rem;
+  }
+}

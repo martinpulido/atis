@@ -9,13 +9,15 @@ html {
   -ms-text-size-adjust: 100%;
   /* 2 */
   -webkit-text-size-adjust: 100%;
-  /* 2 */ }
+  /* 2 */
+}
 
 /**
  * Remove the margin in all browsers (opinionated).
  */
 body {
-  margin: 0; }
+  margin: 0;
+}
 
 /* HTML5 display definitions
    ========================================================================== */
@@ -37,7 +39,8 @@ nav,
 section,
 summary {
   /* 1 */
-  display: block; }
+  display: block;
+}
 
 /**
  * Add the correct display in IE 9-.
@@ -46,20 +49,23 @@ audio,
 canvas,
 progress,
 video {
-  display: inline-block; }
+  display: inline-block;
+}
 
 /**
  * Add the correct display in iOS 4-7.
  */
 audio:not([controls]) {
   display: none;
-  height: 0; }
+  height: 0;
+}
 
 /**
  * Add the correct vertical alignment in Chrome, Firefox, and Opera.
  */
 progress {
-  vertical-align: baseline; }
+  vertical-align: baseline;
+}
 
 /**
  * Add the correct display in IE 10-.
@@ -67,7 +73,8 @@ progress {
  */
 template,
 [hidden] {
-  display: none; }
+  display: none;
+}
 
 /* Links
    ========================================================================== */
@@ -79,7 +86,8 @@ a {
   background-color: transparent;
   /* 1 */
   -webkit-text-decoration-skip: objects;
-  /* 2 */ }
+  /* 2 */
+}
 
 /**
  * Remove the outline on focused links when they are also active or hovered
@@ -87,7 +95,8 @@ a {
  */
 a:active,
 a:hover {
-  outline-width: 0; }
+  outline-width: 0;
+}
 
 /* Text-level semantics
    ========================================================================== */
@@ -100,28 +109,33 @@ abbr[title] {
   /* 1 */
   text-decoration: underline;
   /* 2 */
+  -webkit-text-decoration: underline dotted;
   text-decoration: underline dotted;
-  /* 2 */ }
+  /* 2 */
+}
 
 /**
  * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
  */
 b,
 strong {
-  font-weight: inherit; }
+  font-weight: inherit;
+}
 
 /**
  * Add the correct font weight in Chrome, Edge, and Safari.
  */
 b,
 strong {
-  font-weight: bolder; }
+  font-weight: bolder;
+}
 
 /**
  * Add the correct font style in Android 4.3-.
  */
 dfn {
-  font-style: italic; }
+  font-style: italic;
+}
 
 /**
  * Correct the font size and margin on `h1` elements within `section` and
@@ -129,20 +143,23 @@ dfn {
  */
 h1 {
   font-size: 2em;
-  margin: 0.67em 0; }
+  margin: 0.67em 0;
+}
 
 /**
  * Add the correct background and color in IE 9-.
  */
 mark {
   background-color: #ff0;
-  color: #000; }
+  color: #000;
+}
 
 /**
  * Add the correct font size in all browsers.
  */
 small {
-  font-size: 80%; }
+  font-size: 80%;
+}
 
 /**
  * Prevent `sub` and `sup` elements from affecting the line height in
@@ -153,13 +170,16 @@ sup {
   font-size: 75%;
   line-height: 0;
   position: relative;
-  vertical-align: baseline; }
+  vertical-align: baseline;
+}
 
 sub {
-  bottom: -0.25em; }
+  bottom: -0.25em;
+}
 
 sup {
-  top: -0.5em; }
+  top: -0.5em;
+}
 
 /* Embedded content
    ========================================================================== */
@@ -167,13 +187,15 @@ sup {
  * Remove the border on images inside links in IE 10-.
  */
 img {
-  border-style: none; }
+  border-style: none;
+}
 
 /**
  * Hide the overflow in IE.
  */
 svg:not(:root) {
-  overflow: hidden; }
+  overflow: hidden;
+}
 
 /* Grouping content
    ========================================================================== */
@@ -188,25 +210,29 @@ samp {
   font-family: monospace, monospace;
   /* 1 */
   font-size: 1em;
-  /* 2 */ }
+  /* 2 */
+}
 
 /**
  * Add the correct margin in IE 8.
  */
 figure {
-  margin: 1em 40px; }
+  margin: 1em 40px;
+}
 
 /**
  * 1. Add the correct box sizing in Firefox.
  * 2. Show the overflow in Edge and IE.
  */
 hr {
+  -webkit-box-sizing: content-box;
   box-sizing: content-box;
   /* 1 */
   height: 0;
   /* 1 */
   overflow: visible;
-  /* 2 */ }
+  /* 2 */
+}
 
 /* Forms
    ========================================================================== */
@@ -222,13 +248,15 @@ textarea {
   font: inherit;
   /* 1 */
   margin: 0;
-  /* 2 */ }
+  /* 2 */
+}
 
 /**
  * Restore the font weight unset by the previous rule.
  */
 optgroup {
-  font-weight: bold; }
+  font-weight: bold;
+}
 
 /**
  * Show the overflow in IE.
@@ -237,7 +265,8 @@ optgroup {
 button,
 input {
   /* 1 */
-  overflow: visible; }
+  overflow: visible;
+}
 
 /**
  * Remove the inheritance of text transform in Edge, Firefox, and IE.
@@ -246,7 +275,8 @@ input {
 button,
 select {
   /* 1 */
-  text-transform: none; }
+  text-transform: none;
+}
 
 /**
  * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
@@ -258,7 +288,8 @@ html [type="button"],
 [type="reset"],
 [type="submit"] {
   -webkit-appearance: button;
-  /* 2 */ }
+  /* 2 */
+}
 
 /**
  * Remove the inner border and padding in Firefox.
@@ -268,7 +299,8 @@ button::-moz-focus-inner,
 [type="reset"]::-moz-focus-inner,
 [type="submit"]::-moz-focus-inner {
   border-style: none;
-  padding: 0; }
+  padding: 0;
+}
 
 /**
  * Restore the focus styles unset by the previous rule.
@@ -277,7 +309,8 @@ button:-moz-focusring,
 [type="button"]:-moz-focusring,
 [type="reset"]:-moz-focusring,
 [type="submit"]:-moz-focusring {
-  outline: 1px dotted ButtonText; }
+  outline: 1px dotted ButtonText;
+}
 
 /**
  * Change the border, margin, and padding in all browsers (opinionated).
@@ -285,7 +318,8 @@ button:-moz-focusring,
 fieldset {
   border: 1px solid #c0c0c0;
   margin: 0 2px;
-  padding: 0.35em 0.625em 0.75em; }
+  padding: 0.35em 0.625em 0.75em;
+}
 
 /**
  * 1. Correct the text wrapping in Edge and IE.
@@ -294,6 +328,7 @@ fieldset {
  *    `fieldset` elements in all browsers.
  */
 legend {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   /* 1 */
   color: inherit;
@@ -305,13 +340,15 @@ legend {
   padding: 0;
   /* 3 */
   white-space: normal;
-  /* 1 */ }
+  /* 1 */
+}
 
 /**
  * Remove the default vertical scrollbar in IE.
  */
 textarea {
-  overflow: auto; }
+  overflow: auto;
+}
 
 /**
  * 1. Add the correct box sizing in IE 10-.
@@ -319,17 +356,20 @@ textarea {
  */
 [type="checkbox"],
 [type="radio"] {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   /* 1 */
   padding: 0;
-  /* 2 */ }
+  /* 2 */
+}
 
 /**
  * Correct the cursor style of increment and decrement buttons in Chrome.
  */
 [type="number"]::-webkit-inner-spin-button,
 [type="number"]::-webkit-outer-spin-button {
-  height: auto; }
+  height: auto;
+}
 
 /**
  * 1. Correct the odd appearance in Chrome and Safari.
@@ -339,21 +379,24 @@ textarea {
   -webkit-appearance: textfield;
   /* 1 */
   outline-offset: -2px;
-  /* 2 */ }
+  /* 2 */
+}
 
 /**
  * Remove the inner padding and cancel buttons in Chrome and Safari on OS X.
  */
 [type="search"]::-webkit-search-cancel-button,
 [type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none; }
+  -webkit-appearance: none;
+}
 
 /**
  * Correct the text style of placeholders in Chrome, Edge, and Safari.
  */
 ::-webkit-input-placeholder {
   color: inherit;
-  opacity: 0.54; }
+  opacity: 0.54;
+}
 
 /**
  * 1. Correct the inability to style clickable types in iOS and Safari.
@@ -363,12 +406,14 @@ textarea {
   -webkit-appearance: button;
   /* 1 */
   font: inherit;
-  /* 2 */ }
+  /* 2 */
+}
 
 @font-face {
   font-family: "Molle";
   src: url("fonts/molle-regular-webfont.eot");
-  src: url("fonts/molle-regular-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/molle-regular-webfont.woff") format("woff"), url("fonts/molle-regular-webfont.ttf") format("truetype"), url("fonts/molle-regular-webfont.svg#Molle") format("svg"); }
+  src: url("fonts/molle-regular-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/molle-regular-webfont.woff") format("woff"), url("fonts/molle-regular-webfont.ttf") format("truetype"), url("fonts/molle-regular-webfont.svg#Molle") format("svg");
+}
 
 /*##### GENERIC STYLES #####*/
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
@@ -376,63 +421,84 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   padding: 0px;
   border: 0px none;
   font: inherit;
-  vertical-align: baseline; }
+  vertical-align: baseline;
+}
 
 html {
-  box-sizing: border-box; }
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
 
 *, *:before, *:after {
-  box-sizing: inherit; }
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
 
 .clr {
-  clear: both; }
+  clear: both;
+}
 
 .flt {
-  float: left; }
+  float: left;
+}
 
 .frt {
-  float: right; }
+  float: right;
+}
 
 .left {
-  text-align: left; }
+  text-align: left;
+}
 
 .right {
-  text-align: right; }
+  text-align: right;
+}
 
 .center {
-  text-align: center; }
+  text-align: center;
+}
 
 .offscreen, .hide {
   position: absolute !important;
-  clip: rect(1px, 1px, 1px, 1px); }
+  clip: rect(1px, 1px, 1px, 1px);
+}
 
 b, strong, .bold {
-  font-weight: 700; }
+  font-weight: 700;
+}
 
 em, i {
-  font-style: italic; }
+  font-style: italic;
+}
 
 /*Clearfix*/
 .cl:before, .cl:after {
   content: "";
-  display: table; }
+  display: table;
+}
 
 .cl:after {
-  clear: both; }
+  clear: both;
+}
 
 html {
-  font: normal 62.5% "Roboto", Arial, helvetica, sans-serif; }
+  font: normal 62.5% "Roboto", Arial, helvetica, sans-serif;
+}
 
 body {
   font-size: 1.6rem;
-  text-align: center; }
+  text-align: center;
+}
 
 html, body {
   position: relative;
   height: 100%;
-  overflow-x: hidden; }
-  html.not-overflow, body.not-overflow {
-    position: relative; }
+  overflow-x: hidden;
+}
+
+html.not-overflow, body.not-overflow {
+  position: relative;
+}
 
 .overlay {
   position: absolute;
@@ -443,11 +509,18 @@ html, body {
   width: 100%;
   height: 100%;
   background: rgba(255, 255, 255, 0);
-  transition: background .2s linear; }
-  .overlay.open {
-    z-index: 1;
-    background: rgba(255, 255, 255, 0.8);
-    transition: background .2s linear; }
+  -webkit-transition: background .2s linear;
+  -o-transition: background .2s linear;
+  transition: background .2s linear;
+}
+
+.overlay.open {
+  z-index: 1;
+  background: rgba(255, 255, 255, 0.8);
+  -webkit-transition: background .2s linear;
+  -o-transition: background .2s linear;
+  transition: background .2s linear;
+}
 
 .category-one-star,
 .category-two-stars,
@@ -458,113 +531,234 @@ html, body {
   width: 10.5rem;
   height: 1.5rem;
   background: url(../img/sprite-stars.png) 0 0 no-repeat;
-  text-indent: -9999em; }
+  text-indent: -9999em;
+}
 
 .category-one-star {
-  background-position: 0 -60px; }
+  background-position: 0 -60px;
+}
 
 .category-two-stars {
-  background-position: 0 -45px; }
+  background-position: 0 -45px;
+}
 
 .category-three-stars {
-  background-position: 0 -30px; }
+  background-position: 0 -30px;
+}
 
 .category-four-stars {
-  background-position: 0 -15px; }
+  background-position: 0 -15px;
+}
 
 .category-five-stars {
-  background-position: 0 0px; }
+  background-position: 0 0px;
+}
 
 .header {
-  position: static; }
-  .header .wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between; }
+  position: static;
+}
+
+.header .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
 
 .logo-link {
   margin: 0.5em 0 0 1em;
-  width: 10rem; }
-  .logo-link .logo {
-    width: 100%; }
+  width: 10rem;
+}
+
+.logo-link .logo {
+  width: 100%;
+}
 
 .menu-link {
-  margin: 1em 1em 0 0; }
+  margin: 1em 1em 0 0;
+}
 
 .wrapper-main-nav {
   position: absolute;
   top: 0;
   right: -100%;
   z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
   align-items: flex-start;
   width: 90%;
   height: 100%;
   background: #017dfb;
-  transition: right .2s linear; }
-  .wrapper-main-nav.open {
-    overflow: auto;
-    right: 0;
-    transition: right .2s linear; }
-  .wrapper-main-nav .logo-link {
-    margin-right: 1em; }
-  .wrapper-main-nav .close-menu {
-    margin: 1em 1em 0 0; }
-  .wrapper-main-nav .main-nav {
-    margin-bottom: 2em;
-    width: 100%;
-    font-size: 1.6rem; }
-    .wrapper-main-nav .main-nav__list {
-      list-style-type: none; }
-    .wrapper-main-nav .main-nav__item:not(:last-child) {
-      margin-top: -1px;
-      border-top: solid 1px #017dfb;
-      border-bottom: solid 1px #017dfb;
-      border-left: solid 5px #ffffff;
-      background-color: #ffffff;
-      /*Overwrite font-awesome icon*/ }
-      .wrapper-main-nav .main-nav__item:not(:last-child) a {
-        display: block;
-        padding: .6em 1em;
-        color: #697899;
-        text-decoration: none; }
-      .wrapper-main-nav .main-nav__item:not(:last-child).active {
-        border-left-color: #017dfb; }
-        .wrapper-main-nav .main-nav__item:not(:last-child).active a {
-          font-weight: bold;
-          color: #017dfb; }
-      .wrapper-main-nav .main-nav__item:not(:last-child) .fa {
-        width: 20px; }
-        .wrapper-main-nav .main-nav__item:not(:last-child) .fa-plane {
-          font-size: 20px; }
-          .wrapper-main-nav .main-nav__item:not(:last-child) .fa-plane:before {
-            position: absolute;
-            transform: translateY(-14px); }
-    .wrapper-main-nav .main-nav__item:last-child {
-      padding: 2rem; }
-      .wrapper-main-nav .main-nav__item:last-child a.become-a-host {
-        border: solid 1px #017dfb;
-        width: 100%;
-        font-size: 1.6rem;
-        color: #697899;
-        text-align: center;
-        transition: color .2s linear; }
-        .wrapper-main-nav .main-nav__item:last-child a.become-a-host:hover {
-          font-weight: bold;
-          color: #017dfb;
-          background-color: #ffffff;
-          transition: color .2s linear; }
+  -webkit-transition: right .2s linear;
+  -o-transition: right .2s linear;
+  transition: right .2s linear;
+}
+
+.wrapper-main-nav.open {
+  overflow: auto;
+  right: 0;
+  -webkit-transition: right .2s linear;
+  -o-transition: right .2s linear;
+  transition: right .2s linear;
+}
+
+.wrapper-main-nav .logo-link {
+  margin-right: 1em;
+}
+
+.wrapper-main-nav .close-menu {
+  margin: 1em 1em 0 0;
+}
+
+.wrapper-main-nav .main-nav {
+  margin-bottom: 2em;
+  width: 100%;
+  font-size: 1.6rem;
+}
+
+.wrapper-main-nav .main-nav__list {
+  list-style-type: none;
+}
+
+.wrapper-main-nav .main-nav__item:not(:last-child) {
+  margin-top: -1px;
+  border-top: solid 1px #017dfb;
+  border-bottom: solid 1px #017dfb;
+  border-left: solid 5px #ffffff;
+  background-color: #ffffff;
+  /*Overwrite font-awesome icon*/
+}
+
+.wrapper-main-nav .main-nav__item:not(:last-child) a {
+  display: block;
+  padding: .6em 1em;
+  color: #697899;
+  text-decoration: none;
+}
+
+.wrapper-main-nav .main-nav__item:not(:last-child).active {
+  border-left-color: #017dfb;
+}
+
+.wrapper-main-nav .main-nav__item:not(:last-child).active a {
+  font-weight: bold;
+  color: #017dfb;
+}
+
+.wrapper-main-nav .main-nav__item:not(:last-child) .fa {
+  width: 20px;
+}
+
+.wrapper-main-nav .main-nav__item:not(:last-child) .fa-plane {
+  font-size: 20px;
+}
+
+.wrapper-main-nav .main-nav__item:not(:last-child) .fa-plane:before {
+  position: absolute;
+  -webkit-transform: translateY(-14px);
+  -ms-transform: translateY(-14px);
+  transform: translateY(-14px);
+}
+
+.wrapper-main-nav .main-nav__item:last-child {
+  padding: 2rem;
+}
+
+.wrapper-main-nav .main-nav__item:last-child a.become-a-host {
+  border: solid 1px #017dfb;
+  width: 100%;
+  font-size: 1.6rem;
+  color: #697899;
+  text-align: center;
+  -webkit-transition: color .2s linear;
+  -o-transition: color .2s linear;
+  transition: color .2s linear;
+}
+
+.wrapper-main-nav .main-nav__item:last-child a.become-a-host:hover {
+  font-weight: bold;
+  color: #017dfb;
+  background-color: #ffffff;
+  -webkit-transition: color .2s linear;
+  -o-transition: color .2s linear;
+  transition: color .2s linear;
+}
 
 .wrapper {
   margin: 0 auto;
   max-width: 194rem;
-  text-align: left; }
+  text-align: left;
+}
 
 @media (min-width: 768px) {
   .wrapper {
-    padding: 0 3rem; } }
+    padding: 0 3rem;
+  }
+}
+
+/*Highlight*/
+.highlight-item {
+  position: relative;
+  text-align: center;
+}
+
+.highlight-item__img {
+  display: block;
+  width: 100%;
+  max-width: auto;
+}
+
+.highlight-item__content {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.highlight-item__title {
+  font: normal 6rem "Molle", Arial, Helvetica, sans-serif;
+  color: #017dfb;
+}
+
+.highlight-item__subtitle {
+  margin-bottom: 1em;
+  font-size: 1.4rem;
+  color: #017dfb;
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+}
+
+@media (min-width: 500px) {
+  .highlight-item__title {
+    font-size: 8rem;
+  }
+  .highlight-item__subtitle {
+    margin-bottom: 2em;
+  }
+}
+
+@media (min-width: 768px) {
+  .highlight-item__title {
+    font-size: 12rem;
+  }
+}
 
 .btn, .btn-primary, .become-a-host, .btn-secondary {
   display: inline-block;
@@ -572,349 +766,474 @@ html, body {
   padding: 1em 3.3em;
   font-size: 1.4rem;
   text-decoration: none;
-  transition: background .2s linear, color .2s linear; }
-  .btn:hover, .btn-primary:hover, .become-a-host:hover, .btn-secondary:hover {
-    transition: background .2s linear, color .2s linear; }
+  -webkit-transition: background .2s linear, color .2s linear;
+  -o-transition: background .2s linear, color .2s linear;
+  transition: background .2s linear, color .2s linear;
+}
+
+.btn:hover, .btn-primary:hover, .become-a-host:hover, .btn-secondary:hover {
+  -webkit-transition: background .2s linear, color .2s linear;
+  -o-transition: background .2s linear, color .2s linear;
+  transition: background .2s linear, color .2s linear;
+}
 
 .btn-primary, .become-a-host {
   background: #ffffff;
   /*
   box-shadow: 0px 0px 82px 82px rgba($atis-blue, .05);*/
-  color: #017dfb; }
-  .btn-primary:hover, .become-a-host:hover {
-    background: #017dfb;
-    color: #ffffff; }
+  color: #017dfb;
+}
+
+.btn-primary:hover, .become-a-host:hover {
+  background: #017dfb;
+  color: #ffffff;
+}
 
 .btn-secondary {
   border: solid 2px #e9e9e9;
   background: #f9f9f9;
-  color: #c5c5c5; }
-  .btn-secondary:hover {
-    background: #e9e9e9; }
+  color: #c5c5c5;
+}
 
-/*Highlight*/
-.highlight-item {
-  position: relative;
-  text-align: center; }
-  .highlight-item__img {
-    display: block;
-    width: 100%;
-    max-width: auto; }
-  .highlight-item__content {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100%;
-    height: 100%;
-    background: rgba(255, 255, 255, 0.5); }
-  .highlight-item__title {
-    font: normal 6rem "Molle", Arial, Helvetica, sans-serif;
-    color: #017dfb; }
-  .highlight-item__subtitle {
-    margin-bottom: 1em;
-    font-size: 1.4rem;
-    color: #017dfb;
-    text-transform: uppercase;
-    letter-spacing: .2rem; }
-
-@media (min-width: 500px) {
-  .highlight-item__title {
-    font-size: 8rem; }
-  .highlight-item__subtitle {
-    margin-bottom: 2em; } }
-
-@media (min-width: 768px) {
-  .highlight-item__title {
-    font-size: 12rem; } }
+.btn-secondary:hover {
+  background: #e9e9e9;
+}
 
 /*Booking Form*/
 .frm-booking {
   padding: 1em;
-  background: #017dfb; }
-  .frm-booking label {
-    position: relative;
-    display: block;
-    border-bottom: solid 1px #017dfb;
-    margin-bottom: 1em;
-    width: 100%;
-    color: #ffffff; }
-    .frm-booking label span.lbl {
-      position: absolute;
-      padding: .4em 0 0 .6em;
-      font-size: 2rem;
-      color: #ffffff; }
-      .frm-booking label span.lbl .fa {
-        color: rgba(255, 255, 255, 0.6); }
-      .frm-booking label span.lbl span {
-        position: absolute;
-        top: -9999em;
-        left: -9999em;
-        clip: rect(1px, 1px, 1px, 1px); }
-  .frm-booking select, .frm-booking input {
-    display: block;
-    border: none;
-    padding: 1rem 2rem 1rem 4rem;
-    width: 100%;
-    background: transparent; }
-  .frm-booking input {
-    border-bottom: solid 1px rgba(255, 255, 255, 0.6);
-    padding: 1.2rem 2rem 1.3rem 4rem; }
-  .frm-booking .submit-button {
-    display: inline-block;
-    border-radius: 2.5em;
-    border: none;
-    margin: 0 auto;
-    padding: .7em 3.3em;
-    width: 100%;
-    max-width: 40rem;
-    background: #fff;
-    font-size: 1.8rem;
-    color: #017dfb; }
-    .frm-booking .submit-button span {
-      font-size: 1.6rem; }
+  background: #017dfb;
+}
+
+.frm-booking label {
+  position: relative;
+  display: block;
+  border-bottom: solid 1px #017dfb;
+  margin-bottom: 1em;
+  width: 100%;
+  color: #ffffff;
+}
+
+.frm-booking label span.lbl {
+  position: absolute;
+  padding: .4em 0 0 .6em;
+  font-size: 2rem;
+  color: #ffffff;
+}
+
+.frm-booking label span.lbl .fa {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.frm-booking label span.lbl span {
+  position: absolute;
+  top: -9999em;
+  left: -9999em;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+.frm-booking select, .frm-booking input {
+  display: block;
+  border: none;
+  padding: 1rem 2rem 1rem 4rem;
+  width: 100%;
+  background: transparent;
+}
+
+.frm-booking input {
+  border-bottom: solid 1px rgba(255, 255, 255, 0.6);
+  padding: 1.2rem 2rem 1.3rem 4rem;
+}
+
+.frm-booking .submit-button {
+  display: inline-block;
+  border-radius: 2.5em;
+  border: none;
+  margin: 0 auto;
+  padding: .7em 3.3em;
+  width: 100%;
+  max-width: 40rem;
+  background: #fff;
+  font-size: 1.8rem;
+  color: #017dfb;
+}
+
+.frm-booking .submit-button span {
+  font-size: 1.6rem;
+}
 
 .pretty-select {
   position: relative;
   overflow: hidden;
   outline: none;
-  border-bottom: solid 1px rgba(255, 255, 255, 0.6); }
-  .pretty-select:after {
-    content: "\f078";
-    position: absolute;
-    top: 50%;
-    right: 0;
-    display: block;
-    margin-top: -1rem;
-    font: normal normal normal 14px/1 FontAwesome;
-    color: rgba(255, 255, 255, 0.6);
-    pointer-events: none; }
-  .pretty-select select {
-    outline: none;
-    border-radius: 0;
-    border: 0;
-    background: transparent;
-    line-height: 1.5;
-    color: #ffffff;
-    -webkit-appearance: none; }
-    .pretty-select select option {
-      color: #000000; }
+  border-bottom: solid 1px rgba(255, 255, 255, 0.6);
+}
+
+.pretty-select:after {
+  content: "\f078";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  display: block;
+  margin-top: -1rem;
+  font: normal normal normal 14px/1 FontAwesome;
+  color: rgba(255, 255, 255, 0.6);
+  pointer-events: none;
+}
+
+.pretty-select select {
+  outline: none;
+  border-radius: 0;
+  border: 0;
+  background: transparent;
+  line-height: 1.5;
+  color: #ffffff;
+  -webkit-appearance: none;
+}
+
+.pretty-select select option {
+  color: #000000;
+}
 
 /*### POPULAR PLACES ###*/
 .popular-places {
-  text-align: center; }
-  .popular-places__title {
-    padding: 2rem 0;
-    color: #697899;
-    line-height: 1.3;
-    text-transform: uppercase;
-    letter-spacing: .6rem;
-    word-spacing: 1.5rem; }
-  .popular-places__item {
-    overflow: hidden;
-    position: relative;
-    margin-bottom: 2rem; }
-    .popular-places__item > a {
-      display: block; }
-      .popular-places__item > a:after {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        display: block;
-        width: 100%;
-        height: 100%;
-        background: rgba(1, 125, 251, 0.2); }
-    .popular-places__item__img {
-      position: relative;
-      float: left;
-      width: 100%; }
-    .popular-places__item__overlay {
-      position: absolute;
-      top: calc(100% - 5rem);
-      left: 0;
-      padding: 1rem;
-      width: 100%;
-      height: 100%;
-      background: rgba(1, 125, 251, 0);
-      text-align: left;
-      transition: top .2s linear, text-align .2s linear, background .2s linear; }
-      .popular-places__item__overlay.open {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        align-items: center;
-        top: 0;
-        background: rgba(1, 125, 251, 0.8);
-        text-align: center;
-        transition: top .2s linear, text-align .2s linear, background .2s linear; }
-    .popular-places__item__title {
-      margin-bottom: 1rem;
-      width: 100%;
-      font-size: 2.6rem;
-      font-weight: bold;
-      color: #ffffff; }
-    .popular-places__item__features {
-      width: 100%;
-      font-size: 1.2rem;
-      font-weight: bold; }
-      .popular-places__item__features li {
-        display: inline-block;
-        margin: .5rem; }
-      .popular-places__item__features a {
-        display: block;
-        border-radius: 1.6rem;
-        border: solid 2px rgba(255, 255, 255, 0.4);
-        padding: .7rem 1.9rem;
-        color: #ffffff;
-        text-decoration: none;
-        transition: background-color .2s linear; }
-        .popular-places__item__features a:hover {
-          background-color: rgba(255, 255, 255, 0.4);
-          transition: background-color .2s linear; }
+  text-align: center;
+}
+
+.popular-places__title {
+  padding: 2rem 0;
+  color: #697899;
+  line-height: 1.3;
+  text-transform: uppercase;
+  letter-spacing: .6rem;
+  word-spacing: 1.5rem;
+}
+
+.popular-places__item {
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.popular-places__item > a {
+  display: block;
+}
+
+.popular-places__item > a:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: rgba(1, 125, 251, 0.2);
+}
+
+.popular-places__item__img {
+  position: relative;
+  float: left;
+  width: 100%;
+}
+
+.popular-places__item__overlay {
+  position: absolute;
+  top: calc(100% - 5rem);
+  left: 0;
+  padding: 1rem;
+  width: 100%;
+  height: 100%;
+  background: rgba(1, 125, 251, 0);
+  text-align: left;
+  -webkit-transition: top .2s linear, text-align .2s linear, background .2s linear;
+  -o-transition: top .2s linear, text-align .2s linear, background .2s linear;
+  transition: top .2s linear, text-align .2s linear, background .2s linear;
+}
+
+.popular-places__item__overlay.open {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  top: 0;
+  background: rgba(1, 125, 251, 0.8);
+  text-align: center;
+  -webkit-transition: top .2s linear, text-align .2s linear, background .2s linear;
+  -o-transition: top .2s linear, text-align .2s linear, background .2s linear;
+  transition: top .2s linear, text-align .2s linear, background .2s linear;
+}
+
+.popular-places__item__title {
+  margin-bottom: 1rem;
+  width: 100%;
+  font-size: 2.6rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.popular-places__item__features {
+  width: 100%;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.popular-places__item__features li {
+  display: inline-block;
+  margin: .5rem;
+}
+
+.popular-places__item__features a {
+  display: block;
+  border-radius: 1.6rem;
+  border: solid 2px rgba(255, 255, 255, 0.4);
+  padding: .7rem 1.9rem;
+  color: #ffffff;
+  text-decoration: none;
+  -webkit-transition: background-color .2s linear;
+  -o-transition: background-color .2s linear;
+  transition: background-color .2s linear;
+}
+
+.popular-places__item__features a:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+  -webkit-transition: background-color .2s linear;
+  -o-transition: background-color .2s linear;
+  transition: background-color .2s linear;
+}
 
 @media screen and (min-width: 500px) {
   .popular-places__item__overlay {
-    top: calc(100% - 6rem); }
+    top: calc(100% - 6rem);
+  }
   .popular-places__item__title {
-    font-size: 3.6rem; } }
+    font-size: 3.6rem;
+  }
+}
 
 @media screen and (min-width: 768px) {
   .popular-places__wrapper-item {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 2rem;
-    grid-row-gap: 2rem; }
+    grid-row-gap: 2rem;
+  }
   .popular-places__item {
     margin-bottom: 0;
-    order: 1; }
-    .popular-places__item.highlight {
-      grid-column-start: 1;
-      grid-column-end: span 2;
-      order: 0; } }
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+  }
+  .popular-places__item.highlight {
+    grid-column-start: 1;
+    grid-column-end: span 2;
+    -webkit-box-ordinal-group: 1;
+    -ms-flex-order: 0;
+    order: 0;
+  }
+}
 
 @media screen and (min-width: 960px) {
   .popular-places__wrapper-item {
     grid-template-columns: 0.37fr repeat(4, 1fr) 0.37fr;
     grid-template-rows: 1fr 1fr 1.75fr;
     grid-gap: 2rem;
-    height: calc(55rem - 2rem); }
+    height: calc(55rem - 2rem);
+  }
   .popular-places__item {
     grid-row-end: span 1;
     grid-column-end: span 2;
-    background: #444; }
-    .popular-places__item.highlight {
-      grid-column-start: 3;
-      grid-column-end: 5;
-      grid-row-start: 1;
-      grid-row-end: 3;
-      order: 1;
-      height: auto; }
-      .popular-places__item.highlight .popular-places__item__img {
-        width: auto;
-        height: 100%; }
-    .popular-places__item:nth-last-child(2), .popular-places__item:last-child {
-      grid-column-end: span 3; }
-    .popular-places__item__overlay {
-      top: calc(100% - 7rem);
-      padding: 2rem; } }
+    background: #444;
+  }
+  .popular-places__item.highlight {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+    height: auto;
+  }
+  .popular-places__item.highlight .popular-places__item__img {
+    width: auto;
+    height: 100%;
+  }
+  .popular-places__item:nth-last-child(2), .popular-places__item:last-child {
+    grid-column-end: span 3;
+  }
+  .popular-places__item__overlay {
+    top: calc(100% - 7rem);
+    padding: 2rem;
+  }
+}
 
 @media only screen and (min-width: 1200px) {
   .popular-places__wrapper-item {
-    height: calc(67rem - 2rem); }
+    height: calc(67rem - 2rem);
+  }
   .popular-places__item__overlay {
     top: calc(100% - 9rem);
-    padding: 3rem; } }
+    padding: 3rem;
+  }
+}
 
 /*### POPULAR HOTELS ###*/
 .popular-hotels {
   padding: 0 1rem 4rem;
   background: #f9f9f9;
-  text-align: center; }
-  .popular-hotels__title {
-    padding: 2rem 0;
-    color: #697899;
-    line-height: 1.3;
-    text-transform: uppercase;
-    letter-spacing: .6rem;
-    word-spacing: 1.5rem; }
-  .popular-hotels__item {
-    position: relative;
-    margin-bottom: 4rem;
-    background: #f6f6f6;
-    box-shadow: 0px 6px 33px -3px rgba(0, 0, 0, 0.1); }
-    .popular-hotels__item__img {
-      display: block;
-      width: 100%; }
-    .popular-hotels__item__title, .popular-hotels__item__category, .popular-hotels__item__price, .popular-hotels__item__days {
-      display: block;
-      width: 50%; }
-    .popular-hotels__item__title {
-      order: 1;
-      font-size: 1.8rem;
-      text-align: left; }
-    .popular-hotels__item__category {
-      order: 3;
-      text-align: left; }
-    .popular-hotels__item__price {
-      order: 2;
-      font-size: 3.6rem;
-      font-weight: 100;
-      text-align: right; }
-    .popular-hotels__item__days {
-      order: 4;
-      width: 7rem;
-      font-size: 1.4rem;
-      text-align: center; }
-  .popular-hotels__info {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 2rem 2rem 4rem 2rem;
-    background: linear-gradient(to bottom, #ffffff 0%, #f6f6f6 100%);
-    color: #697899;
-    text-align: left; }
-  .popular-hotels .btn-primary {
-    position: absolute;
-    left: 50%;
-    bottom: -2rem;
-    transform: translateX(-50%);
-    min-width: 17rem;
-    text-align: center; }
+  text-align: center;
+}
+
+.popular-hotels__title {
+  padding: 2rem 0;
+  color: #697899;
+  line-height: 1.3;
+  text-transform: uppercase;
+  letter-spacing: .6rem;
+  word-spacing: 1.5rem;
+}
+
+.popular-hotels__item {
+  position: relative;
+  margin-bottom: 4rem;
+  background: #f6f6f6;
+  -webkit-box-shadow: 0px 6px 33px -3px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 6px 33px -3px rgba(0, 0, 0, 0.1);
+}
+
+.popular-hotels__item__img {
+  display: block;
+  width: 100%;
+}
+
+.popular-hotels__item__title, .popular-hotels__item__category, .popular-hotels__item__price, .popular-hotels__item__days {
+  display: block;
+  width: 50%;
+}
+
+.popular-hotels__item__title {
+  -webkit-box-ordinal-group: 2;
+  -ms-flex-order: 1;
+  order: 1;
+  font-size: 1.8rem;
+  text-align: left;
+}
+
+.popular-hotels__item__category {
+  -webkit-box-ordinal-group: 4;
+  -ms-flex-order: 3;
+  order: 3;
+  text-align: left;
+}
+
+.popular-hotels__item__price {
+  -webkit-box-ordinal-group: 3;
+  -ms-flex-order: 2;
+  order: 2;
+  font-size: 3.6rem;
+  font-weight: 100;
+  text-align: right;
+}
+
+.popular-hotels__item__days {
+  -webkit-box-ordinal-group: 5;
+  -ms-flex-order: 4;
+  order: 4;
+  width: 7rem;
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.popular-hotels__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 2rem 2rem 4rem 2rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#f6f6f6));
+  background: -webkit-linear-gradient(top, #ffffff 0%, #f6f6f6 100%);
+  background: -o-linear-gradient(top, #ffffff 0%, #f6f6f6 100%);
+  background: linear-gradient(to bottom, #ffffff 0%, #f6f6f6 100%);
+  color: #697899;
+  text-align: left;
+}
+
+.popular-hotels .btn-primary {
+  position: absolute;
+  left: 50%;
+  bottom: -2rem;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  min-width: 17rem;
+  text-align: center;
+}
 
 @media screen and (min-width: 768px) {
   .popular-hotels {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     padding-right: 2rem;
     padding-left: 2rem;
-    text-align: left; }
-    .popular-hotels__title {
-      width: 100%; }
-    .popular-hotels__item {
-      width: 48%; }
-    .popular-hotels .wrap-buttons {
-      width: 100%;
-      text-align: center; } }
+    text-align: left;
+  }
+  .popular-hotels__title {
+    width: 100%;
+  }
+  .popular-hotels__item {
+    width: 48%;
+  }
+  .popular-hotels .wrap-buttons {
+    width: 100%;
+    text-align: center;
+  }
+}
 
 @media screen and (min-width: 960px) {
   .popular-hotels {
+    -webkit-box-pack: initial;
+    -ms-flex-pack: initial;
     justify-content: initial;
-    text-align: center; }
-    .popular-hotels__item {
-      margin-right: 1.5%;
-      margin-left: 1.5%;
-      width: 30%; } }
+    text-align: center;
+  }
+  .popular-hotels__item {
+    margin-right: 1.5%;
+    margin-left: 1.5%;
+    width: 30%;
+  }
+}
 
 .footer {
-  color: #bdbdbd; }
-  .footer .wrapper {
-    padding: 1rem;
-    text-align: center; }
-  .footer-logo {
-    width: 6rem; }
-  .footer-copyright {
-    font-size: 1.4rem; }
+  color: #bdbdbd;
+}
+
+.footer .wrapper {
+  padding: 1rem;
+  text-align: center;
+}
+
+.footer-logo {
+  width: 6rem;
+}
+
+.footer-copyright {
+  font-size: 1.4rem;
+}
 
 /*# sourceMappingURL=styles.css.map */
