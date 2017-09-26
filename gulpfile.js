@@ -4,17 +4,26 @@ var gulp = require('gulp'),
     sourcemaps = require('gulp-sourcemaps'),
     browserSync = require('browser-sync').create();
 
+var sassOptions = {
+  errLogConsole: true,
+  outputStyle: 'expanded'
+}
+
 gulp.task('sass',function(){
   return gulp
     .src('./dev/sass/**/*.scss')
     .pipe(sourcemaps.init())
-    .pipe(sass())
+    .pipe(sass(sassOptions).on('error', sass.logError))
+    .pipe(autoprefixer({
+      browsers: ['last 4 versions'],
+      cascade: false
+    }))
     .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest('./dist/css'))
     .pipe(browserSync.stream());
 });
 
-gulp.task('serve', ['sass'], function(){
+gulp.task('watch', ['sass'], function(){
   browserSync.init({
     reloadDelay: 2000,
     server: "./dist"
@@ -25,4 +34,4 @@ gulp.task('serve', ['sass'], function(){
 
 });
 
-gulp.task('default', ['serve']);
+gulp.task('default', ['watch']);
