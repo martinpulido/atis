@@ -19,18 +19,18 @@ gulp.task('sass',function(){
       cascade: false
     }))
     .pipe(sourcemaps.write('.'))
-    .pipe(gulp.dest('./dist/css'))
+    .pipe(gulp.dest('./css'))
     .pipe(browserSync.stream());
 });
 
 gulp.task('watch', ['sass'], function(){
   browserSync.init({
     reloadDelay: 2000,
-    server: "./dist"
+    server: "./"
   });
 
   gulp.watch("./dev/sass/**/*.scss", ['sass']);
-  gulp.watch("./dist/*.html").on( 'change', browserSync.reload);
+  gulp.watch("./*.html").on( 'change', browserSync.reload);
 
 });
 
