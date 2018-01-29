@@ -2,6 +2,10 @@
 
 ATIS es un ejercicio de diseño de una compañía de reservas por parte de [Pat Wasik](https://dribbble.com/glash) para [Symu.co](https://symu.co/freebies/templates-4/atis-psd-template/) que he convertido a HTML, CSS.
 
+## Diseño vs Maquetación
+* *Diseño*: https://symu.co/freebies/templates-4/atis-psd-template/
+* *Maquetación*: https://martinpulido.github.io/atis/
+
 ## Desarrollo
 
 En base al diseño *as-is* ofrecido por Symu.co, construimos una versión responsive del portal, para ello utilizaremos HTML, CSS puros, sin frameworks y JS con jQuery para dotar de funcionalidad básica.
