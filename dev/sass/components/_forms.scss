@@ -14,8 +14,8 @@
 
 .btn-primary, .become-a-host {
   @extend .btn;
-  background: $white;/*
-  box-shadow: 0px 0px 82px 82px rgba($atis-blue, .05);*/
+  background: $white;
+  box-shadow: 0 0 82px 25px rgba($atis-blue,.05);
   color: $atis-blue;
 
   &:hover {
