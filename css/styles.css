@@ -878,14 +878,13 @@ html.not-overflow, body.not-overflow {
 .frm-booking select, .frm-booking input {
   display: block;
   border: none;
-  padding: 1rem 2rem 1rem 4rem;
+  padding: 1.2rem 2rem 1.3rem 4rem;
   width: 100%;
   background: transparent;
 }
 
 .frm-booking input {
   border-bottom: solid 1px rgba(255, 255, 255, 0.6);
-  padding: 1.2rem 2rem 1.3rem 4rem;
   color: #ffffff;
 }
 
@@ -939,6 +938,31 @@ html.not-overflow, body.not-overflow {
 
 .pretty-select select option {
   color: #000000;
+}
+
+@media screen and (min-width: 960px) {
+  .wrap-fields {
+    display: grid;
+    grid-gap: 2.5rem;
+    grid-template-columns: 31rem repeat(6, 1fr) 6.5rem;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .frm-booking label {
+    margin-bottom: 0;
+  }
+  .frm-booking .submit-button {
+    border-radius: 50%;
+    padding: 0;
+    width: 4.8rem;
+    height: 4.8rem;
+  }
+  .frm-booking .submit-button span {
+    position: absolute;
+    top: -9999em;
+    left: -9999em;
+  }
 }
 
 /*### POPULAR PLACES ###*/
